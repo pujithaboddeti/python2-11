@@ -1,0 +1,35 @@
+ass1:Finding minimum value from the list
+n=int(input('enter a num:'))
+l=[]
+for i in range(n):
+    a=int(input())
+    l.append(a)
+maxx=l[0]
+for i in range(0,n):
+    if l[i]>maxx:
+        maxx=l[i]
+print(maxx)
+
+
+or 
+
+
+#way 1
+'''
+l=list(map(int,input().split()))
+maxx=l[0]
+for i in l:
+    if i>maxx:
+        maxx=i
+print(maxx)
+'''
+
+#way 2
+'''
+l=list(map(int,input().split()))
+maxx=l[-1]
+for i in l:
+    if i>maxx:
+        maxx=i
+print(maxx)
+'''
