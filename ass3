@@ -1,0 +1,12 @@
+#2nd min value
+def findmin(l):
+    minn=l[0]
+    for i in l:
+        if i<minn:
+            minn=i
+    return minn
+l=list(map(int,input().split()))
+fmin=findmin(l)
+l.remove(fmin)
+smin=findmin(l)
+print(smin)
